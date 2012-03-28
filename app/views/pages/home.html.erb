@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ben Johnston</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" media="screen and (min-device-width: 481px)" href="screen.css">
+		<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="mobile.css">
+		
+		<%= stylesheet_link_tag    "screen", :media => "all" %>
+		
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+		<!--[if IE]>
+			<link rel="stylesheet" href="/css/default.css" media="screen" />
+		<![endif]-->
+		<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<script src="jquery.js"></script>
+		<script src="/js/default.js"></script>
+		<script type="text/javascript" src="http://use.typekit.com/oxp7sai.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<!--[if IE]>
+			<script src="/js/html5.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="http://data.markjardine.com/mint/?js"></script>
+	</head>
+	<body>
+		<section id="wrap">
+			<header>
+				<h1>Ben Johnston - Developer</h1>
+				<p> <em>Ruby on Rails</em>, <em>Javascript</em>, <em>jQuery</em>, <em>CSS3</em>, <em>HTML5</em>, 
+				<em>Python</em>, <em>TDD</em>, <em>Pair Programming</em>, <em>Learning iOS and design</em>.</p>                       
+			</header>
+			<section id="web">
+				<p>Reach me on  <a href="http://twitter.com/benjohnstonsf/">twitter</a>, 
+					<a href="http://github.com/benjohnstonsf/">github</a>,
+					<a href="http://www.quora.com/Ben-Johnston-4">quora</a>, 
+					<a href="https://plus.google.com/111044643113231546455/posts">google</a>. </p>
+					<p>I share stuff I like on my  <a href="http://newcontinents.tumblr.com/">tumblr</a>.</p>
+			</section>
+		</section>
+	</body>
+</html>

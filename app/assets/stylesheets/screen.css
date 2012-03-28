@@ -34,17 +34,19 @@ section{display:block;}
 	Structure
 ------------------------------------------*/
 html{
-	background: #0d0d0d url(../img/background.jpg);
+	background: #fff url(../img/background.jpg);
 }
 body{
-	border-top: 12px solid #1c1c1c;
+	border-top: 30px dashed #fff;
 	background: url(../img/background_repeat.jpg) repeat-x;
 	color: #b6b6b6;
 	font-family: "helvetica neue", helvetica, arial, sans-serif;
 	min-width: 320px;
 }
+
+
 #wrap{
-	padding: 25% 0 0 10%;
+	padding: 7% 0 0 10%;
 	width: 80%;
 	min-width: 320px;
 	max-width: 580px;
@@ -55,22 +57,22 @@ header{
 	font-size: 36px;
 	line-height: 1.2em;
 	-webkit-text-stroke: .5px transparent;
-	text-shadow: #000 0 -1px 0;
+	text-shadow: #9CCBFF 0 -1px 0;
 	-webkit-transition: color .2s linear;
 }
 header h1{
 	display: inline;
-	color: #fff;
+	color: #00CCFF;
 }
 header p{
 	display: inline;
 }
 header em{
-	text-shadow: rgba(255,255,255,0) 0 1px 20px;
+	text-shadow: #ccc 0 1px 20px;
 	-webkit-transition: color .2s linear, text-shadow .2s linear;
 }
 header em:hover{
-	color: #fff;
+	color: #555;
 	text-shadow: rgba(255,255,255,.5) 0 1px 20px;
 }
 section{display: block;}
@@ -79,8 +81,9 @@ section{display: block;}
 	font-size: 20px;
 	line-height: 2em;
 	margin-bottom: .8em;
-	color: #9ccbff;
+	color: #333;
 	-webkit-text-stroke: .5px transparent;
+	margin-top: 0px;
 }
 #web a{
 	color: #9ccbff;
@@ -90,11 +93,11 @@ section{display: block;}
 	-webkit-transition: color .2s linear, border-bottom-color .2s linear, text-shadow .2s linear;
 }
 html:hover #web a{
-	color: #ecff4f;
+	color: #00CCFF;
 	border-bottom-color: #565446;
 }
 html:hover #web a:hover{
-	color: #fff;
+	color: #B6B6B6;
 	border-color: #fff;
 	text-shadow: rgba(255,255,255,.8) 0 1px 15px;
 }
