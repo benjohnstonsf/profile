@@ -1,241 +1,62 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
-
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+	<head>
+		<title>Ben Johnston</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" media="screen and (min-device-width: 481px)" href="screen.css">
+		<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="mobile.css">
+		<!--[if IE]>
+			<link rel="stylesheet" href="/css/default.css" media="screen" />
+		<![endif]-->
+		<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<script src="jquery.js"></script>
+		<script src="/js/default.js"></script>
+		<script type="text/javascript" src="http://use.typekit.com/oxp7sai.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<!--[if IE]>
+			<script src="/js/html5.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="http://data.markjardine.com/mint/?js"></script>
+	</head>
+	<body>
+		<section id="wrap">
+			<header>
+				<h1>Ben Johnston is&hellip;</h1>
+				<p>a <em>software engineer</em>, <em>irish person</em>, <em>cyclist</em>, <em>music nut</em>, <em>gamer</em>, <em>drummer</em>, <em>skater</em>, <em>snowboarder</em>, <em>dog lover</em>, <em>husband</em>, and <em>husband</em>.</p>
+			</header>
+			<section id="web">
+				<p>You can find him on <a href="http://twitter.com/benjohnstonsf/">twitter</a>, <a href="http://facebook.com/benjohnston/" title="Sorry, I only add friends.">facebook</a>, <a href="http://flickr.com/photos/benjohnston/">flickr</a>, <a href="http://dribbble.com/players/benjohnston" title="Please don&rsquo;t ask for invites.">dribbble</a>, <a href="http://vimeo.com/benjohnston/videos">vimeo</a>, and sometimes writing on his <a href="#" title="Not Ready for Prime Time.">tiny blog</a>.</p>
+			</section>
+			<section id="links">
+				<ul>
+					<script type="text/javascript">
+					//<![CDATA[
+					
+					function hiveware_enkoder(){var i,j,x,y,x=
+					"x=\"7363935363734333736303662363234323633622c553d346870322d387\\\"=x366936" +
+					"36333234373237323733656532346433373535663633653636343460363234693436303362" +
+					"36343367333332363231383632343537363564363732336366353934663331333637346334" +
+					"37356133363233623633633536353935663333623632366362353363633635693336313136" +
+					"3636646236336233733b36322c563265333630323337326833363930323232313236356363" +
+					"3338743c3739636b3630393d363961382632746f6636623b32372367253d346969763b7569" +
+					"2232326d363b2239673b313866347467663e6165633c666e26363b20372435253726382565" +
+					"66307931663364337635623e6735713d363b21766b363923392632356c2239636826327934" +
+					"7633713266357463763e273875737e287d387b392920382471427168636e28782c6166756d" +
+					"3a6b3229763d64776e656c6e287c396b303d3968227f666b37272d397b3921382274737269" +
+					"68227f666d7b39213c29682274737265737e287d3b297b79223d3b296b3874737265737e28" +
+					"7d3b297b79223d3b296b3864776e656c6e287c396b313d3x<i;0=i(rof;''=y;\\\"b392a6" +
+					"82274737265737e297d397d7b39213c296822y};))2,i(rtsbus.x+'%'(epacsenu=+y{)2=" +
+					"+i;htgnel.\";y='';for(i=0;i<x.length;i+=61){for(j=Math.min(x.length,i+61);" +
+					"--j>=i;){y+=x.charAt(j);}}y;";
+					while(x=eval(x));}hiveware_enkoder();
+					
+					//]]>
+					</script>
+					<li class="periodical"><a href="http://periodic.al" title="Visit My Latest Project">Periodic.al</a></li>
+				</ul>
+			</section>
+			<p class="warning">I am looking for full stack development work in the Bay Area</p>
+		</section>
+	</body>
 </html>
